@@ -1,4 +1,35 @@
 # Day07
+Q2. https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+Ans-
+
+                class Circle{
+
+                  constructor(radius){
+                    this.radius=radius;
+                    }
+
+                    getRadius(){
+                      return this.radius;
+                      }
+
+                     setRadius(newRadius){
+                         this.radius=newRadius;
+                    }
+                }
+
+                  let radius=1.0;
+                  let color="red";
+
+                   let c1=new Circle(parseFloat(radius));
+                   console.log("First Radius:- "+c1.getRadius());
+                   c1.setRadius(2.0);
+
+                   console.log("Changed Radius:- "+c1.getRadius());
+                   
+           o/p- First Radius:- 1
+                Changed Radius:- 2
+                
 
 Q3. Write a “person” class to hold all the details.
 
