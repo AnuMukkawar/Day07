@@ -64,3 +64,50 @@ Ans-
           let p1=new Person("Anuja","Mukkawar","Engineer","Latur");
 
             console.log("First Name: "+p1.getFirstName()+" \n"+"Last Name: "+p1.getLastName()+" \n"+"Profession: "+p1.getProfession()+" \n"+"City: "+p1.getCity());
+            
+            
+            
+Q4. write a class to calculate uber price.
+
+Ans-
+
+              class UberPrice{
+
+                  constructor(distance,price)
+                  {
+                    this.distance=distance;
+                    this.price=price;
+                  }
+
+                 getDistance(){
+                      return this.distance;
+                    }
+
+                 setPrice(newPrice){
+                      this.price=newPrice;
+                    }
+
+                 getPrice(){
+                      return this.price;
+                    }
+                }
+                //distance is in km
+                let distance=userInput;
+                let price;
+
+                let u=new UberPrice(parseInt(distance),price);
+                console.log("Distance is: "+u.getDistance()+"km");
+                 if(parseInt(distance)===1)
+                {
+                    price=10;
+                  }else{
+                          price=parseInt(distance)*10;
+                    };
+
+                u.setPrice(price);
+                console.log("Price will be: Rs."+u.getPrice());
+
+  
+  i/p- 25
+  o/p- Distance is: 25km
+  Price will be: Rs.250
