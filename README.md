@@ -1,4 +1,49 @@
 # Day07
+
+Q1. https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+
+Ans-
+
+
+            class Movie{
+
+              constructor(title,studio,rating){
+                this.title=title;
+                this.studio=studio;
+                this.rating=rating;
+                }
+
+                getPG(movie){
+
+                  for(var i in movie){
+                      if(movie[i].rating==="PG")
+                      { 
+                          arr.push(movie[i].title);
+                      }
+                    }
+                    return arr;
+
+                  }
+            }
+            const arr=[];
+            var movie=[{title:"ABC",studio:"Dharma",rating:"R"},{title:"AB",studio:"EON",rating:"PG"},{title:"ABCD",studio:"Dharma",rating:"PG"}]
+
+             let m1=new Movie(movie);
+             console.log("Movies whose rating is PG:-"+m1.getPG(movie));
+
+              let m2=new Movie("Casino Royale","Eon Productions","PG.13");
+
+              console.log(m2);
+          
+          
+o/p-
+Movies whose rating is PG:-AB,ABCD
+Movie {
+  title: 'Casino Royale',
+  studio: 'Eon Productions',
+  rating: 'PG.13' }
+  
+  
 Q2. https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
 
 Ans-
