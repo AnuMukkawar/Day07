@@ -3,6 +3,38 @@ Q2. https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
 
 Ans-
 
+case1-
+            class Circle{
+
+              constructor(radius,color){
+                this.radius=radius;
+                this.color=color;
+                }
+
+                getRadius(){
+                  return this.radius;
+                  }
+
+                 getColor(){
+                      return this.color;
+                }
+            }
+
+              let radius=1.0;
+              let color="red";
+
+               let c1=new Circle(parseFloat(radius),color);
+               console.log("Radius:- "+c1.getRadius());
+               
+               console.log("color:- "+c1.getColor());
+               
+o/p-Radius:- 1
+color:- red
+
+
+Case 2:
+
+
                 class Circle{
 
                   constructor(radius){
@@ -27,8 +59,8 @@ Ans-
 
                    console.log("Changed Radius:- "+c1.getRadius());
                    
-           o/p- First Radius:- 1
-                Changed Radius:- 2
+o/p- First Radius:- 1
+Changed Radius:- 2
                 
 
 Q3. Write a “person” class to hold all the details.
