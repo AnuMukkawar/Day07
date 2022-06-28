@@ -3,65 +3,69 @@ Q2. https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
 
 Ans-
 
-case1-
-            class Circle{
+                        class Circle{
 
-              constructor(radius,color){
-                this.radius=radius;
-                this.color=color;
-                }
+                          constructor(radius,color){
+                            this.radius=radius;
+                            this.color=color;
+                            }
 
-                getRadius(){
-                  return this.radius;
-                  }
+                            getRadius(){
+                              return this.radius;
+                              }
 
-                 getColor(){
-                      return this.color;
-                }
-            }
+                             setRadius(newRadius){
+                                 this.radius=newRadius;
+                            }
 
-              let radius=1.0;
-              let color="red";
+                            getColor(){
+                              return this.color;
+                              }
 
-               let c1=new Circle(parseFloat(radius),color);
-               console.log("Radius:- "+c1.getRadius());
-               
-               console.log("color:- "+c1.getColor());
-               
-o/p-Radius:- 1
-color:- red
+                             setColor(newColor){
+                                 this.color=newColor;
+                            }
+
+                            getArea(radius){
+                              return Math.PI*radius*radius
+                              }
+
+                            getCircumference(radius)
+                            {
+                              return 2*Math.PI*radius;
+                              }
+                        }
+
+                          let radius=5.0;
+                          let color="red";
+
+                           let c1=new Circle(parseFloat(radius),color);
+                           console.log("First Radius:- "+c1.getRadius());
+                           c1.setRadius(2.0);
+
+                           console.log("Changed Radius:- "+c1.getRadius());
+
+                           console.log("First Color:- "+c1.getColor());
+                           c1.setColor("Blue");
+
+                           console.log("Changed Color:- "+c1.getColor());
+
+                           console.log(c1);
+
+                           console.log("Area of circle is- "+c1.getArea(radius).toFixed(2));
+
+                           console.log("Circumference of circle is- "+c1.getCircumference(radius).toFixed(2));
 
 
-Case 2:
-
-
-                class Circle{
-
-                  constructor(radius){
-                    this.radius=radius;
-                    }
-
-                    getRadius(){
-                      return this.radius;
-                      }
-
-                     setRadius(newRadius){
-                         this.radius=newRadius;
-                    }
-                }
-
-                  let radius=1.0;
-                  let color="red";
-
-                   let c1=new Circle(parseFloat(radius));
-                   console.log("First Radius:- "+c1.getRadius());
-                   c1.setRadius(2.0);
-
-                   console.log("Changed Radius:- "+c1.getRadius());
-                   
-o/p- First Radius:- 1
+o/p-
+First Radius:- 5
 Changed Radius:- 2
-                
+First Color:- red
+Changed Color:- Blue
+Circle { radius: 2, color: 'Blue' }
+Area of circle is- 78.54
+Circumference of circle is- 31.42
+
 
 Q3. Write a “person” class to hold all the details.
 
